@@ -2,17 +2,17 @@ pipeline{
   agent any
   stages{
     stage('checkout'){
-      step{
+      steps{
         echo "commiting to github"
       }
     }
     stage('build'){
-      step{
+      steps{
         echo "building the project"
       }
     }
     stage("deploying"){
-      step{
+      steps{
         echo "deploying...."
       }
     }
